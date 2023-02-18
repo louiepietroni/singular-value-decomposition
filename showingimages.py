@@ -5,6 +5,7 @@ from Matrix import Matrix
 from Vector import Vector
 
 
+# NOTE: Choose image from line ~55
 def get_eigen_vectors(original_matrix, matrix_rank):
     matrix = Matrix(original_matrix.rows, original_matrix.columns)
     matrix.data = [[item for item in row] for row in original_matrix.data]
@@ -53,14 +54,14 @@ def approximate_matrix(u, sigma, v_transpose, r):
 
 
 
-puppy = imread('puppy.jpg')
-# puppy = imread('house.jpg')
-# puppy = imread('city.jpg')
-# puppy = imread('beach.jpg')
-# puppy = imread('person.jpg')
-# puppy = imread('country.jpg')
-# puppy = imread('bird.jpg')
-# puppy = imread('car.jpg')
+puppy = imread('images/puppy.jpg')
+# puppy = imread('images/house.jpg')
+# puppy = imread('images/city.jpg')
+# puppy = imread('images/beach.jpg')
+# puppy = imread('images/person.jpg')
+# puppy = imread('images/country.jpg')
+# puppy = imread('images/bird.jpg')
+# puppy = imread('images/car.jpg')
 
 puppy_grey = np.mean(puppy, -1)
 image = plt.imshow(puppy_grey)
@@ -84,13 +85,13 @@ plt.axis('off')
 plt.title('image with integer values, values: ' + str(original_size))
 plt.show()
 
-approximation_edges = Matrix.detect_edges(original_matrix)
-new_puppy = np.array(approximation_edges.data)
-image = plt.imshow(new_puppy)
-image.set_cmap('gray')
-plt.axis('off')
-plt.title('with edge detection matrix')
-plt.show()
+# approximation_edges = Matrix.detect_edges(original_matrix)
+# new_puppy = np.array(approximation_edges.data)
+# image = plt.imshow(new_puppy)
+# image.set_cmap('gray')
+# plt.axis('off')
+# plt.title('with edge detection matrix')
+# plt.show()
 
 
 # print(original_matrix, 'original matrix')
@@ -142,13 +143,13 @@ for r in range(5, a_rank + 5, 5):
     plt.title('r = ' + str(r) + ', values: ' + str(size_stored) + ', ' + str(int((size_stored/original_size) * 100)) + '%')
     plt.show()
 
-    approximation_edges = Matrix.detect_edges(approximation)
-
-    new_puppy = np.array(approximation_edges.data)
-    image = plt.imshow(new_puppy)
-    image.set_cmap('gray')
-    plt.axis('off')
-    plt.title('r = ' + str(r) + ' with edge detection matrix')
-    plt.show()
+    # approximation_edges = Matrix.detect_edges(approximation)
+    #
+    # new_puppy = np.array(approximation_edges.data)
+    # image = plt.imshow(new_puppy)
+    # image.set_cmap('gray')
+    # plt.axis('off')
+    # plt.title('r = ' + str(r) + ' with edge detection matrix')
+    # plt.show()
 
 

@@ -53,14 +53,14 @@ def approximate_matrix(u, sigma, v_transpose, r):
 
 
 
-# puppy = imread('puppy.jpg')
-# puppy = imread('house.jpg')
-# puppy = imread('city.jpg')
-# puppy = imread('beach.jpg')
-# puppy = imread('person.jpg')
-# puppy = imread('country.jpg')
-puppy = imread('bird.jpg')
-# puppy = imread('car.jpg')
+# puppy = imread('images/puppy.jpg')
+puppy = imread('images/house.jpg')
+# puppy = imread('images/city.jpg')
+# puppy = imread('images/beach.jpg')
+# puppy = imread('images/person.jpg')
+# puppy = imread('images/country.jpg')
+# puppy = imread('images/bird.jpg')
+# puppy = imread('images/car.jpg')
 
 
 

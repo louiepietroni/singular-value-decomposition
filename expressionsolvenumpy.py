@@ -226,35 +226,35 @@ def predict_digit_matrix(matrix_numpy):
     return prediction
 
 
-# processed_one = get_processed_digit('one.jpg')
+# processed_one = get_processed_digit('expression-images/one.jpg')
 # show_digit(processed_one, 'Pre processed 1')
 # print('one', predict_digit_matrix(processed_one))
 #
-# processed_two = get_processed_digit('two.jpg')
+# processed_two = get_processed_digit('expression-images/two.jpg')
 # show_digit(processed_two, 'Pre processed 2')
 # print('two', predict_digit_matrix(processed_two))
 #
-# processed_three = get_processed_digit('three.jpg')
+# processed_three = get_processed_digit('expression-images/three.jpg')
 # show_digit(processed_three, 'Pre processed 3')
 # print('three', predict_digit_matrix(processed_three))
 #
-# processed_four = get_processed_digit('four.jpg')
+# processed_four = get_processed_digit('expression-images/four.jpg')
 # show_digit(processed_four, 'Pre processed 4')
 # print('four', predict_digit_matrix(processed_four))
 #
-# processed_five = get_processed_digit('five.jpg')
+# processed_five = get_processed_digit('expression-images/five.jpg')
 # show_digit(processed_five, 'Pre processed 5')
 # print('five', predict_digit_matrix(processed_five))
 #
-# processed_six = get_processed_digit('six.jpg')
+# processed_six = get_processed_digit('expression-images/six.jpg')
 # show_digit(processed_six, 'Pre processed 6')
 # print('six', predict_digit_matrix(processed_six))
 #
-# processed_seven = get_processed_digit('seven.jpg')
+# processed_seven = get_processed_digit('expression-images/seven.jpg')
 # show_digit(processed_seven, 'Pre processed 7')
 # print('seven', predict_digit_matrix(processed_seven))
 #
-# processed_eight = get_processed_digit('eight.jpg')
+# processed_eight = get_processed_digit('expression-images/eight.jpg')
 # show_digit(processed_eight, 'Pre processed 8')
 # print('eight', predict_digit_matrix(processed_eight))
 
@@ -348,12 +348,12 @@ print('scaled and processed')
 seperate_digits_numpy = [np.array(digit_matrix.data) for digit_matrix in seperate_digits]
 print('Converted seperate digits to numpy')
 
-# multiple_digit = imread('28457.jpg')
-# multiple_digit = imread('bossnumbers.jpg')
-# multiple_digit = imread('largenumbers.jpg')
-# multiple_digit = imread('libbynumbers.jpg')
-# multiple_digit = imread('newnumbers.jpg')
-# multiple_digit = imread('expression2.jpg')
+# multiple_digit = imread('expression-images/28457.jpg')
+# multiple_digit = imread('expression-images/bossnumbers.jpg')
+# multiple_digit = imread('expression-images/largenumbers.jpg')
+# multiple_digit = imread('expression-images/libbynumbers.jpg')
+# multiple_digit = imread('expression-images/newnumbers.jpg')
+# multiple_digit = imread('expression-images/expression2.jpg')
 
 
 # multiple_digit_grey = np.mean(multiple_digit, -1)
